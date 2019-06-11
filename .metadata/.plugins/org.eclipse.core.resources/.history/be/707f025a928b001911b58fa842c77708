@@ -1,0 +1,20 @@
+
+public class Notice {
+	private int	numOfCharge;
+	private boolean whetherCharging;
+	
+	public void setWhetherCharging(){
+		
+	}
+	
+	public int getNumOfCharge(int numOfCharge) {
+		return 0;
+	}
+	
+	public boolean getWhetherCharging(boolean whetherCharging) {
+		return true;
+	}
+	
+	//getCurrentAmount()
+	
+}
