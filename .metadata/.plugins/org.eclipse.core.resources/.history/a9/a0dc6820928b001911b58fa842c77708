@@ -1,7 +1,0 @@
-
-public class Notice {
-	private int	numOfCharge;
-	private boolean whetherCharging;
-	
-	
-}
