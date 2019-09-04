@@ -15,7 +15,7 @@ public class StringMethod {
 		System.out.println(str.substring(2));
 		System.out.println(str.substring(2, 5));
 		System.out.println(str.indexOf("z"));
-		
+
 	}
 }
 
