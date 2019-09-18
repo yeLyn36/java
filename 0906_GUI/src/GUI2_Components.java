@@ -21,6 +21,9 @@ public class GUI2_Components {
         JTextField tf = new JTextField("JTextField");
         JTextArea ta = new JTextArea(2, 10);
 
+        JPanel panelResult = new JPanel();
+        JLabel labelResult = new JLabel("Result");
+
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -37,7 +40,10 @@ public class GUI2_Components {
         panel.add(tf);
         panel.add(ta);
         panel.add(cb);
+        panelResult.add(labelResult);
+
         frame.add(panel);
+        frame.add(panelResult);
 
         frame.setPreferredSize(new Dimension(600, 400));
         frame.pack();
