@@ -27,7 +27,19 @@ public class GUI2_Components {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                btn.setText("clicked");
+                String result = "";
+                result += lb.getText();
+                result += btn.getText();
+                result += cbx.isSelected();
+                result += cbx2.isSelected();
+                result += rb.isSelected();
+                result += rb2.isSelected();
+                result += cb.getSelectedIndex();
+                result += cb.getSelectedItem();
+                result += tf.getText();
+                result += ta.getText();
+
+                labelResult.setText(result);
             }
         });
 
@@ -40,10 +52,10 @@ public class GUI2_Components {
         panel.add(tf);
         panel.add(ta);
         panel.add(cb);
-        panelResult.add(labelResult);
+        panel.add(labelResult);
 
         frame.add(panel);
-        frame.add(panelResult);
+//        frame.add(panelResult);
 
         frame.setPreferredSize(new Dimension(600, 400));
         frame.pack();
