@@ -42,40 +42,29 @@ public class GUI2_Components {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String result = "";
-                result += lb.getText();
-                result += btn.getText();
-                result += cbx.isSelected();
-                result += cbx2.isSelected();
-                result += rb.isSelected();
-                result += rb2.isSelected();
-                result += cb.getSelectedIndex();
-                result += cb.getSelectedItem();
-                result += tf.getText();
-                result += ta.getText();
-
-                labelResult.setText(result);
+                getResult(lb, btn, cbx, cbx2, rb, rb2, cb, tf, ta, labelResult);
             }
         });
 
         ItemListener il = new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                if(e.getSource() == cbx){
-                    System.out.println("cbx : " + cbx.isSelected());
-                }
-                else if (e.getSource() == cbx2) {
-                    System.out.println("cbx2 : " + cbx2.isSelected());
-                }
-                else if (e.getSource() == rb) {
-                    System.out.println("rb : " + rb.isSelected());
-                }
-                else if (e.getSource() == rb2) {
-                    System.out.println("rb2 : " + rb2.isSelected());
-                }
-                else if (e.getSource() == cb) {
-                    System.out.println(cb.getSelectedItem());
-                }
+                getResult(lb, btn, cbx, cbx2, rb, rb2, cb, tf, ta, labelResult);
+//                if(e.getSource() == cbx){
+//                    System.out.println("cbx : " + cbx.isSelected());
+//                }
+//                else if (e.getSource() == cbx2) {
+//                    System.out.println("cbx2 : " + cbx2.isSelected());
+//                }
+//                else if (e.getSource() == rb) {
+//                    System.out.println("rb : " + rb.isSelected());
+//                }
+//                else if (e.getSource() == rb2) {
+//                    System.out.println("rb2 : " + rb2.isSelected());
+//                }
+//                else if (e.getSource() == cb) {
+//                    System.out.println(cb.getSelectedItem());
+//                }
             }
         };
         cbx.addItemListener(il);
@@ -102,5 +91,20 @@ public class GUI2_Components {
         frame.pack();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    public static void getResult(JLabel lb, JButton btn, JCheckBox cbx, JCheckBox cbx2, JRadioButton rb, JRadioButton rb2, JComboBox cb, JTextField tf, JTextArea ta, JLabel labelResult) {
+        String result = "";
+        result += lb.getText();
+        result += btn.getText();
+        result += cbx.isSelected();
+        result += cbx2.isSelected();
+        result += rb.isSelected();
+        result += rb2.isSelected();
+        result += cb.getSelectedIndex();
+        result += cb.getSelectedItem();
+        result += tf.getText();
+        result += ta.getText();
+        labelResult.setText(result);
     }
 }
