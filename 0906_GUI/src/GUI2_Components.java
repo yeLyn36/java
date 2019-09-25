@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class GUI2_Components {
     public static void main(String[] args) {
@@ -24,6 +23,22 @@ public class GUI2_Components {
         JPanel panelResult = new JPanel();
         JLabel labelResult = new JLabel("Result");
 
+        cbx.setSelected(true);
+        rb.setSelected(true);
+        tf.setText("DEFAULT");
+
+        tf.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) { //focus 받기
+                if (tf.getText().equals("DEFAULT")) tf.setText("FOCUS");
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) { //focus 잃기
+                if (tf.getText().equals("FOCUS")) tf.setText("DEFAULT");
+            }
+        });
+
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -42,6 +57,32 @@ public class GUI2_Components {
                 labelResult.setText(result);
             }
         });
+
+        ItemListener il = new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getSource() == cbx){
+                    System.out.println("cbx : " + cbx.isSelected());
+                }
+                else if (e.getSource() == cbx2) {
+                    System.out.println("cbx2 : " + cbx2.isSelected());
+                }
+                else if (e.getSource() == rb) {
+                    System.out.println("rb : " + rb.isSelected());
+                }
+                else if (e.getSource() == rb2) {
+                    System.out.println("rb2 : " + rb2.isSelected());
+                }
+                else if (e.getSource() == cb) {
+                    System.out.println(cb.getSelectedItem());
+                }
+            }
+        };
+        cbx.addItemListener(il);
+        cbx2.addItemListener(il);
+        rb.addItemListener(il);
+        rb2.addItemListener(il);
+        cb.addItemListener(il);
 
         panel.add(lb);
         panel.add(btn);
