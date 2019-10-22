@@ -1,19 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GUI3_Layout {
+public class GUI8_Layout {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
+        ImageIcon ii = new ImageIcon(GUI8_Layout.class.getResource("instagram.png"));
+        ImageIcon editIi = new ImageIcon(ii.getImage().getScaledInstance(
+                ii.getIconWidth()/10, ii.getIconHeight()/10, Image.SCALE_DEFAULT));
+        JLabel lb = new JLabel(editIi);
 
-        FlowLayout fl = new FlowLayout();     //  JPanel Default layout
-        fl.setAlignment(FlowLayout.CENTER);
-        for (int i = 0; i < 5; i++){
-            JButton btn = new JButton("button" + i);
-            panel.add(btn);
-        }
-        panel.setLayout(fl);
-
+        panel.add(lb);
         frame.add(panel);
 
         frame.setPreferredSize(new Dimension(600, 400));

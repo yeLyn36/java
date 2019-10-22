@@ -6,7 +6,7 @@ public class GUI4_Layout {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
 
-        GridLayout gl = new GridLayout(2, 5);
+        GridLayout gl = new GridLayout(2, 4);
         for (int i = 0; i < 5; i++){
             JButton btn = new JButton("button" + i);
             panel.add(btn);

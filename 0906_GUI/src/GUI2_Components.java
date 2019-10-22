@@ -9,14 +9,15 @@ public class GUI2_Components {
         JPanel panel = new JPanel();
         JLabel lb = new JLabel("JLabel");
         JButton btn = new JButton("JButton");
-        JCheckBox cbx = new JCheckBox("미성년자");
-        JCheckBox cbx2 = new JCheckBox("성인");
+        JCheckBox cbx = new JCheckBox("정한");
+        JCheckBox cbx2 = new JCheckBox("우도환");
+        JRadioButton rb = new JRadioButton("미성년자");
+        JRadioButton rb2 = new JRadioButton("성인");
         ButtonGroup bg = new ButtonGroup();
-        bg.add(cbx);
-        bg.add(cbx2);
+        bg.add(rb);
+        bg.add(rb2);
         JComboBox cb = new JComboBox(food);
-        JRadioButton rb = new JRadioButton("JRadioButton");
-        JRadioButton rb2 = new JRadioButton("JRadioButton");
+
         JTextField tf = new JTextField("JTextField");
         JTextArea ta = new JTextArea(2, 10);
 
