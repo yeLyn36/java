@@ -12,7 +12,6 @@ public class GUI8_Layout {
 
         panel.add(lb);
         frame.add(panel);
-
         frame.setPreferredSize(new Dimension(600, 400));
         frame.pack();
         frame.setVisible(true);
