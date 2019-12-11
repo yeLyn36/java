@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/.." />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../0906_GUI/src" />
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0329_NumberToMajor/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0403_StringBuffer/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0403_Wrapper/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0403_dateValue/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0405_Mathematics/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0410_IO/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0510_IO/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0522_Stream/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0524_Stream/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0529_Stream/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0531_Exception/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0605_Exception/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0612_Thread/src" />
+          <root url="file://$MODULE_DIR$/../1학기/0614_Thread/src" />
+          <root url="file://$MODULE_DIR$/../1학기/Extends/src" />
+          <root url="file://$MODULE_DIR$/../1학기/Hello/src" />
+          <root url="file://$MODULE_DIR$/../1학기/If_For_Test/src" />
+          <root url="file://$MODULE_DIR$/../1학기/Lang_Test/src" />
+          <root url="file://$MODULE_DIR$/../1학기/Project_money/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/mysql-connector-java-8.0.18.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="mysql-connector-java-8.0.18" level="project" />
+  </component>
+</module>
